@@ -3,6 +3,11 @@ package centralita;
 public class LlamadaProvincial extends Llamada {
 	
 	private int hora;
+	private enum franjas {FRANJA1, FRANJA2, FRANJA3};
+	// En realidad es mejor un mapa, donde la clave sea la franja
+	// y almacene el coste de cada una. Luego un método privado que asocie
+	// los horarios a cada franja
+	private double coste_provincial;
 	
 	public LlamadaProvincial() {
 		super();
